@@ -1,0 +1,173 @@
+.container{
+  width: 100%; background-color: #F6F6FB;
+}
+.container .view-header{
+  width: 100%;
+}
+.container .view-header .image-top{
+  width: 100%; height: 240PX;
+}
+.container .view-body{
+  width: 100%; margin-top: -10px;
+}
+.container .view-body .view-title{
+  font-size: 40px; color: #333; font-weight: bold;
+  margin-top: 8px; margin-bottom: 20px; height: 70px;
+  border-bottom: 1px solid #EFEFEF;
+}
+.container .view-body .view-content{
+  margin-bottom: 10px;
+  width: 100%; background-color: #FFF;
+  padding: 10PX; box-sizing: border-box;
+  padding-left: 20PX; padding-right: 20PX;
+}
+.container .view-body .view-content .view-subtitle{
+  font-size: 35px; font-weight: bold; color: #333; text-align: left;
+}
+.container .view-body .view-content .view-status{
+  display: flex; justify-content: center; align-items: center;
+  line-height: 24PX; font-size: 14PX; margin-top: 6PX;
+  border-radius: 15PX; padding-left: 10PX; border-bottom-left-radius: 0px;
+  padding-right: 10PX; display: inline-block;
+}
+.container .view-body .view-content .gray{
+  background-color: #B5B2B5; color: #FFF;
+}
+.container .view-body .view-content .orange{
+  background-color: #f50; color: #FFF;
+}
+.container .view-body .view-content .blue{
+  background-color: #108ee9; color: #FFF;
+}
+.container .view-body .view-content .blue1{
+  background-color: #2db7f5; color: #FFF;
+}
+.container .view-body .view-content .view-doctor{
+  background-color: #FAFAFE; border-radius: 8PX; padding: 10PX;
+  margin-top: 10PX; display: flex; flex-direction: row;
+  align-items: center;
+}
+.container .view-body .view-content .view-bebi{
+  font-size: 30px; color: #999; margin-top: 15px; line-height: 34px;
+  padding-left: 10px; padding-right: 10px; box-sizing: border-box;
+}
+.container .view-body .view-content .view-doctor .image-avatar{
+  border-radius: 50%; width: 50PX; height: 50PX; min-width: 50PX;
+  margin-right: 8PX; background-color: #F7F7F7;
+}
+.container .view-body .view-content .view-doctor .view-right{
+  flex: 1; width: 0;
+}
+.container .view-body .view-content .view-doctor .view-right .text-name{
+  font-size: 16PX; color: #333;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.container .view-body .view-content .view-doctor .view-right .text-info{
+  font-size: 14PX; color: #999; margin-top: 5PX;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.container .view-body .view-content .view-store-info{
+  display: flex; flex-direction: row; align-items: center;
+}
+.container .view-body .view-content .view-store-info .image-store-avatar{
+  border-radius: 50%; width: 50PX; height: 50PX; margin-right: 10PX;
+  background-color: #FFF;
+}
+.container .view-body .view-content .view-store-info .view-info{
+  flex: 1; width: 0;
+}
+.container .view-body .view-content .view-store-info .view-info .view-name{
+  font-size: 16PX; color: #333;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container .view-body .view-content .view-store-info .view-info .view-contact{
+  margin-top: 3PX; color: #999;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container .view-body .view-content .view-store-info .view-info .view-contact .text{
+  margin-left: 15PX;
+}
+.container .view-body .view-content .view-address{
+  margin-top: 10PX; display: flex; flex-direction: row;
+  justify-content: space-between; align-items: top;
+  color: #333; border-bottom: 1px solid #F6F6FB; height: 68px;
+}
+.container .view-body .view-content .text-tip{
+  font-size: 16PX; color: #999;
+}
+.container .view-body .view-content .view-timer{
+  margin-top: 10PX; display: flex; flex-direction: row;
+  justify-content: space-between; align-items: center;
+  color: #333;
+}
+.container .view-body .view-title2{
+  font-size: 20PX; color: #333; font-weight: bold;
+  display: flex; flex-direction: row;
+  align-items: center; margin-top: 10PX; margin-bottom: 15px;
+}
+.container .view-body .view-title2 .view-dividing-line{
+  background:linear-gradient(180deg,rgba(233,127,107,1) 0%,rgba(228,2,127,1) 100%);
+  width: 5PX; height: 20PX;
+  margin-right: 16px; border-top-left-radius: 5PX;
+  border-top-right-radius: 5PX; border-bottom-left-radius: 5PX;
+  border-bottom-right-radius: 5PX;
+}
+.container .image-details{
+  width: 100%; height: auto;
+}
+.container .view-bottom{
+  position: fixed; width: 100%; height: 50PX; bottom: 0;
+  display: flex; flex-direction: row; justify-content: center; align-items: center;
+  background:linear-gradient(270deg,rgba(233,127,107,1) 0%,rgba(228,2,127,1) 100%); font-size: 18PX; color: #FFF;
+}
+.container .view-bottom1{
+  position: fixed; width: 100%; height: 50PX; bottom: 0;
+  display: flex; flex-direction: row; justify-content: center; align-items: center;
+  background-color: #B5B2B5; font-size: 18PX; color: #FFF;
+}
+.container .view-scroll{
+  width: 100%; height: 500px; overflow-x: hidden; overflow-y: auto;
+}
+
+.container{
+  .view-scroll{
+    .view-body{
+      .view-desc{
+        .detail-image{
+          display: flex;
+          margin: 0 auto;
+        }
+      }
+      .view-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+        padding-bottom: 8px;
+        &-txt{
+          flex:1;
+        }
+        .share-btn{
+          width: 120px;
+          height:50px;
+          line-height:50px;
+          font-size:24px;
+          color:#E97F6B;
+          border-color:#E97F6B;
+          background-color: rgba(233, 127, 107, .1);
+        }
+      }
+    }
+  }
+}

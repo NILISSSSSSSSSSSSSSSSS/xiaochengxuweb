@@ -1,0 +1,189 @@
+.bubble-container {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  &.text {
+
+  }
+  &.audio {
+    .content {
+      min-height: 40px;
+      padding: 20px;
+      // min-width: 40px;
+      // background-color: #04BE02;
+      // box-shadow: 1px 1px 5px 1px #04BE02;
+      color: #fff;
+      // &::before {
+      //   content: '';
+      //   position: absolute;
+      //   left: -28px;
+      //   top: 8px;
+      //   width: 0;
+      //   height: 0;
+      //   border: 14px solid #fff;
+      //   border-color: transparent #fff transparent transparent;
+      // }
+      .content__voice--inner {
+        position: relative;
+        height: 40px;
+        // padding: 20px;
+        color: #fff;
+        &::before {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          content: '';
+          // transform: translateY(-50%);
+          width: 40px;
+          height: 40px;
+          background: url(../../../assets/images/voice.png) no-repeat;
+          background-size: 40px 40px;
+        }
+      }
+    }
+  }
+  &.audio.current {
+    .content {
+      .content__voice--inner {
+        &::before {
+          animation: fade .8s ease 0s infinite alternate;
+        }
+      }
+    }
+  }
+  &.image {
+    .content {
+      // width: 240px;
+      // max-width: 480px;
+      padding: 0;
+      width: 480px;
+      height: 270px;
+      overflow: hidden;
+      text-align: center;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // height: auto;
+      .bubble-image {
+        display: flex;
+        // width: 400px;
+        // height: 225px;
+        // display: block;
+        // max-width: 450px;
+        // display: block;
+        // width: 100%;
+      }
+    }
+  }
+  &.self {
+    flex-direction: row-reverse;
+    .info {
+      text-align: right;
+      padding-left: unset;
+      padding-right: 20px;
+      .content {
+        position: relative;
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 28px;
+        border-radius: 8px;
+        padding: 20px;
+        // box-shadow: -1Px -1Px 5Px 1Px #cdcdcd;
+        // background-color: #fff;
+        color: #ababab;
+        // box-shadow: 0px 0px 5px 1px #04BE02;
+        color: #fff;
+        background-color: #04BE02;
+        .content__voice--inner {
+          // position: relative;
+          // height: 40px;
+          &::before {
+            position: absolute;
+            // left: -0px;
+            left: unset;
+            right: 0px;
+            bottom: 0;
+            content: '';
+            // transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background: url(../../../assets/images/voice.png) no-repeat;
+            background-size: 40px 40px;
+            color: #fff;
+            transform: rotate(180deg);
+          }
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          // left: -28px;
+          left: unset;
+          right: -27px;
+          top: 8px;
+          width: 0;
+          height: 0;
+          border: 14px solid #04BE02;
+          border-color: transparent transparent transparent #04BE02;
+        }
+      }
+    }
+  }
+  &.image.self {
+    .content {
+      padding: 0;
+    }
+  }
+}
+
+.avatar {
+  height: 84px;
+  width: 84px;
+  border-radius: 42px;
+  background-color: darkorange;
+  overflow: hidden;
+  .avatar-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.info {
+  flex: 1;
+  padding-left: 20px;
+  .name {
+    font-size: 26px;
+  }
+  .content {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 28px;
+    border-radius: 8px;
+    padding: 20px;
+
+    // box-shadow: 1px 1px 5px 1px #cdcdcd;
+    background-color: #fff;
+    color: #ababab;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -27px;
+      top: 8px;
+      width: 0;
+      height: 0;
+      border: 14px solid #fff;
+      border-color: transparent #fff transparent transparent;
+    }
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}

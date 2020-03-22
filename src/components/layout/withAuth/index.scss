@@ -1,0 +1,89 @@
+@import '../../../assets/styles/base.scss';
+
+.modal {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-left: 67.5px;
+  padding-right: 67.5px;
+  height: 100%;
+  background-color: #fff;
+  transition: transform 200ms;
+  will-change: transform;
+  // transform: translateX(100%);
+  // &.show {
+  //   // top: 0vh;
+  //   transform: translateY(0);
+  // }
+  &.trans {
+    // transform: translateX(0);
+  }
+}
+
+.header {
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1PX solid $mainBorderColor;
+  .logo {
+    width: 180px;
+    height: 180px;
+    border-radius: 60px;
+    overflow: hidden; margin-bottom: 5PX;
+  }
+  .name {
+    margin: 10px;
+    font-size: 36px;
+    font-weight: bold;
+  }
+}
+.description {
+  margin-top: 50px;
+  .desc-tpl {
+    font-size: 30px;
+    font-weight: bold;
+    color: $mainFontColor;
+  }
+  .desc-list {
+    margin-top: 28px;
+    font-size: 30px;
+    color: #999;
+  }
+}
+.button-group {
+  margin-top: 50px;
+  .button {
+    width: 100%;
+    height: 90px;
+    &.button-auth {
+      background-color: $mainThemeColor;
+      color: #fff;
+      border-radius: 13px;
+      border-color: $mainThemeColor;
+      font-size: 36px;
+      &::after {
+        border-color: $mainThemeColor;
+        width: 0;
+        height: 0;
+      }
+    }
+    &.button-cancel {
+      width: 80px;
+      margin-top: 36px;
+      background-color: transparent;
+      color: $subFontColor;
+      font-size: 30px;
+      border: none;
+      outline: none;
+      &::after {
+        border: none;
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+}
